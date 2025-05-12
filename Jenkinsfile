@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image 'gcc:13'
+             args '-u root'
         }
     }
 
